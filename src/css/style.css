@@ -347,6 +347,16 @@ input.main_input {
   padding: 4px;
   float: left;
 }
+
+input.main_input_empty {
+  background-color: #fdeaeb;
+  border: 2px #c82127 solid;
+  width: 298px;
+  height: 16px;
+  padding: 4px;
+  float: left;
+}
+
 textarea.main_textarea {
   background-color: #fdeaeb;
   border: 1px #e2c7c8 solid;
@@ -355,6 +365,16 @@ textarea.main_textarea {
   padding: 4px;
   float: left;
 }
+
+textarea.main_textarea_empty {
+  background-color: #fdeaeb;
+  border: 2px #c82127 solid;
+  width: 298px;
+  height: 118px;
+  padding: 4px;
+  float: left;
+}
+
 button.submit {
   background-color: #b52025;
   color: #ffffff;
