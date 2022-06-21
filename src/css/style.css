@@ -297,6 +297,14 @@ input.newsletter_input {
   padding: 4px;
   float: left;
 }
+input.newsletter_input_empty {
+  background-color: #fdeaeb;
+  border: 2px #c82127 solid;
+  width: 191px;
+  height: 16px;
+  padding: 4px;
+  float: left;
+}
 form#newsletter {
   padding: 10px 0 0 0;
 }

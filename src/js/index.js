@@ -1,9 +1,11 @@
 import "../css/style.css";
-import showMessage from "./showMessage";
+import show from "./show";
+import check from "./check";
 
 const form = document.querySelector("#newsletter");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  // eslint-disable-next-line no-console
-  showMessage("Form 'Home' has submited");
+  const signupValue = document.getElementById("signup").value;
+  if (!check("signup", signupValue)) return;
+  show("Form 'Home' has submitted");
 });
