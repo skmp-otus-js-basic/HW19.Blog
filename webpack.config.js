@@ -59,15 +59,16 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        //   test: /\.css$/i,
+        test: /\.(s*)css$/, // match any .scss or .css file,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
         generator: {
-          // filename: "images/[hash][ext]",
-          filename: "images/[name][ext]",
+          filename: "images/[hash][ext]",
+          // filename: "images/[name][ext]",
         },
       },
       {

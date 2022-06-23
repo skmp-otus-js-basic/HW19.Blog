@@ -1,4 +1,4 @@
-import "../css/style.css";
+import "../scss/style.scss";
 import { saveList } from "./storage";
 import check from "./check";
 

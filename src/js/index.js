@@ -1,11 +1,12 @@
-import "../css/style.css";
+import "../scss/style.scss";
 import show from "./show";
 import check from "./check";
 
 const form = document.querySelector("#newsletter");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const signupValue = document.getElementById("signup").value;
-  if (!check("signup", signupValue)) return;
+  const signup = document.getElementById("signup");
+  if (!check("signup", signup.value)) return;
+  signup.value = "";
   show("Form 'Home' has submitted");
 });
